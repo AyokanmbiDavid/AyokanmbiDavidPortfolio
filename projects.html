@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ayokanmbi David Adeleke — King Xeroid, full-stack software developer.">
+<title>Projects — Xeroid</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+</head><body>
+<div class="page-transition"></div><div class="noise"></div><div class="cursor-dot"></div>
+<div class="page-loader"><div><div class="loader-logo">XEROID<span style="color:var(--accent)">.</span></div><div class="loader-bar"><div class="loader-progress"></div></div></div></div>
+
+<nav class="nav glass">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">XEROID<span>.</span></a>
+    <div class="nav-links">
+      <a data-page href="index.html">Home</a>
+      <a data-page href="about.html">About</a>
+      <a data-page href="projects.html">Projects</a>
+      <a data-page href="playground.html">Playground</a>
+      <a data-page href="contact.html">Contact</a>
+    </div>
+    <a class="btn btn-primary magnetic hidden md:inline-flex" href="contact.html">Let's build <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <button class="menu" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a>
+    <a href="playground.html">Playground</a><a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
+<main>
+<section class="section pt-48">
+ <div class="max-w-6xl mx-auto px-5">
+  <div class="kicker">Selected work</div><h1 class="section-title mt-4">Built.<br><span class="outline">Tested.</span><br>Shipped.</h1>
+  <p class="muted max-w-2xl mt-7 leading-8">A growing archive of things I have designed and developed. Each project is a chance to practice a different part of the craft.</p>
+ </div>
+</section>
+
+<section class="pb-32">
+ <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-2 gap-7">
+  <article class="project-card card reveal" data-tilt>
+   <div class="project-art grid-bg"><div class="code-window"><div><span class="green">function</span> addTask(task) {</div><div>&nbsp;&nbsp;tasks.push(task)</div><div>&nbsp;&nbsp;render(tasks)</div><div>}</div><div class="mt-4 text-gray-600">Task Tracker / productivity</div></div></div>
+   <div class="p-7"><div class="tag">01 · Productivity</div><h2 class="text-3xl font-bold mt-2">Task Tracker</h2><p class="muted leading-7 mt-4">A task-focused application built to make everyday work easier to organise and track.</p><div class="flex flex-wrap gap-2 mt-5"><span class="skill-pill">JavaScript</span><span class="skill-pill">UI</span><span class="skill-pill">State</span></div><a class="btn btn-primary mt-7" href="https://xeroid-task-tracker.vercel.app/" target="_blank">Open live project ↗</a></div>
+  </article>
+  <article class="project-card card reveal" data-tilt>
+   <div class="project-art" style="background:linear-gradient(145deg,#18232d,#07080a)"><div class="absolute inset-10 rounded-2xl bg-black/30 border border-white/10 p-7"><div class="text-gray-500 text-xs">XEROID / MOVIES</div><h2 class="text-5xl font-bold mt-5 tracking-tight">WATCH<br><span class="text-lime-300">MORE.</span></h2><div class="mt-8 flex gap-2"><span class="skill-pill">Discover</span><span class="skill-pill">Search</span></div></div></div>
+   <div class="p-7"><div class="tag">02 · Entertainment</div><h2 class="text-3xl font-bold mt-2">Movie App</h2><p class="muted leading-7 mt-4">A visual movie discovery experience with an emphasis on browsing, search and responsive presentation.</p><div class="flex flex-wrap gap-2 mt-5"><span class="skill-pill">JavaScript</span><span class="skill-pill">API</span><span class="skill-pill">Responsive</span></div><a class="btn btn-primary mt-7" href="https://xeroid-movies.vercel.app/" target="_blank">Open live project ↗</a></div>
+  </article>
+ </div>
+</section>
+
+<section class="section grid-bg">
+ <div class="max-w-6xl mx-auto px-5">
+  <div class="kicker">Engineering process</div><h2 class="section-title mt-3">Idea → interface<br>→ <span class="outline">impact.</span></h2>
+  <div class="grid md:grid-cols-4 gap-4 mt-12">
+   <div class="card p-6 reveal"><div class="tag">01</div><h3 class="font-bold mt-6">Discover</h3><p class="muted text-sm mt-3">Understand the problem and desired user outcome.</p></div>
+   <div class="card p-6 reveal"><div class="tag">02</div><h3 class="font-bold mt-6">Design</h3><p class="muted text-sm mt-3">Shape the flow, hierarchy and visual language.</p></div>
+   <div class="card p-6 reveal"><div class="tag">03</div><h3 class="font-bold mt-6">Develop</h3><p class="muted text-sm mt-3">Build responsive frontend and dependable backend logic.</p></div>
+   <div class="card p-6 reveal"><div class="tag">04</div><h3 class="font-bold mt-6">Refine</h3><p class="muted text-sm mt-3">Test, polish, animate and ship the experience.</p></div>
+  </div>
+ </div>
+</section>
+</main>
+
+
+<footer class="footer">
+  <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row justify-between gap-5">
+    <div><div class="logo text-2xl">XEROID<span>.</span></div><p class="muted text-sm mt-2">Building ideas into useful digital experiences.</p></div>
+    <div class="flex gap-5 text-xl">
+      <a href="mailto:davidayokanmbi47@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://wa.me/2349024572602?text=Hello%20David%2C%20I%20found%20your%20portfolio%20and%20I'd%20like%20to%20talk%20about%20a%20project." aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body></html>

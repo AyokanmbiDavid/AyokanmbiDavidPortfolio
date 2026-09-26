@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ayokanmbi David Adeleke — King Xeroid, full-stack software developer.">
+<title>Contact — Xeroid</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+</head><body>
+<div class="page-transition"></div><div class="noise"></div><div class="cursor-dot"></div>
+<div class="page-loader"><div><div class="loader-logo">XEROID<span style="color:var(--accent)">.</span></div><div class="loader-bar"><div class="loader-progress"></div></div></div></div>
+
+<nav class="nav glass">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">XEROID<span>.</span></a>
+    <div class="nav-links">
+      <a data-page href="index.html">Home</a>
+      <a data-page href="about.html">About</a>
+      <a data-page href="projects.html">Projects</a>
+      <a data-page href="playground.html">Playground</a>
+      <a data-page href="contact.html">Contact</a>
+    </div>
+    <a class="btn btn-primary magnetic hidden md:inline-flex" href="contact.html">Let's build <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <button class="menu" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a>
+    <a href="playground.html">Playground</a><a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
+<main>
+<section class="section pt-48 grid-bg">
+ <div class="max-w-6xl mx-auto px-5">
+  <div class="kicker">Contact</div>
+  <h1 class="section-title mt-4">Let's turn<br>an idea into<br><span class="outline">software.</span></h1>
+  <div class="grid lg:grid-cols-2 gap-12 mt-14">
+   <div>
+    <p class="text-lg leading-8">Got a website, web app, dashboard, product idea or an interface that needs to come alive? Send me a message.</p>
+    <div class="space-y-3 mt-8">
+      <a class="card p-5 flex items-center justify-between hover:border-lime-300/40 transition" href="https://wa.me/2349024572602?text=Hello%20David%2C%20I%20found%20your%20portfolio%20and%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank"><span><span class="tag">WhatsApp</span><span class="block font-bold mt-1">+234 902 457 2602</span></span><i class="fa-brands fa-whatsapp text-2xl"></i></a>
+      <a class="card p-5 flex items-center justify-between hover:border-lime-300/40 transition" href="mailto:davidayokanmbi47@gmail.com"><span><span class="tag">Email</span><span class="block font-bold mt-1 break-all">davidayokanmbi47@gmail.com</span></span><i class="fa-solid fa-envelope text-2xl"></i></a>
+    </div>
+   </div>
+   <form class="card p-7" id="contactForm">
+    <div class="tag">Quick message</div>
+    <div class="space-y-4 mt-6">
+      <input class="form-input" id="name" placeholder="Your name" required>
+      <input class="form-input" id="subject" placeholder="What are we building?" required>
+      <textarea class="form-input min-h-36" id="message" placeholder="Tell me a little about the idea..." required></textarea>
+      <button class="btn btn-primary magnetic w-full justify-center" type="submit">Send via WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
+    </div>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="max-w-6xl mx-auto px-5">
+  <div class="card p-8 md:p-12 grid md:grid-cols-2 gap-8 items-center">
+   <div><div class="kicker">Based in Lagos</div><h2 class="text-3xl md:text-5xl font-bold mt-3">Built locally.<br>Designed for everywhere.</h2></div>
+   <div class="muted leading-8">Developer · Frontend · Backend · Creative web experiences.<br><br>Available for conversations about interesting digital projects.</div>
+  </div>
+ </div>
+</section>
+</main>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+ const form=document.getElementById("contactForm");
+ form.addEventListener("submit",e=>{
+   e.preventDefault();
+   const name=document.getElementById("name").value.trim();
+   const subject=document.getElementById("subject").value.trim();
+   const message=document.getElementById("message").value.trim();
+   const text=`Hello David, my name is ${name}. I'd like to talk about: ${subject}.\\n\\n${message}`;
+   window.open("https://wa.me/2349024572602?text="+encodeURIComponent(text),"_blank");
+ });
+});
+</script>
+
+
+<footer class="footer">
+  <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row justify-between gap-5">
+    <div><div class="logo text-2xl">XEROID<span>.</span></div><p class="muted text-sm mt-2">Building ideas into useful digital experiences.</p></div>
+    <div class="flex gap-5 text-xl">
+      <a href="mailto:davidayokanmbi47@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://wa.me/2349024572602?text=Hello%20David%2C%20I%20found%20your%20portfolio%20and%20I'd%20like%20to%20talk%20about%20a%20project." aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body></html>
